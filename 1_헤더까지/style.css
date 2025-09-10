@@ -1,0 +1,413 @@
+@import url(reset.css);
+body{
+  width:100vw;
+  height: 1000vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+
+header,main,aside,footer{
+  background-color: rgba(100,200,0,0.5) ;
+}
+
+header{
+    width:1280px;
+    height: 215px;
+    margin:0 auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;    
+}
+header>*{
+  border: 1px dotted black ;
+  /* 추후 지울것 */
+  width:inherit;
+}
+#header-icon{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: stretch;
+height: 48px;
+width:inherit;
+}
+.icon-left{
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  width:200px;
+}
+.icon-right{
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: 16px;
+  width:500px;
+}
+
+#header-icon>div>button{
+  width:48px;
+  height: 48px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 0;
+}
+
+#header-icon>div>button>div{
+  width:32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.바로가기 div{
+  
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -311px -166px;
+}
+.pay div{
+      background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -248px -260px;
+}
+
+.talk div{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -99px -316px;
+  }
+
+.alarm div{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -311px -232px;
+}
+.basket div{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -311px -166px;
+}
+
+/* 맨위 헤더*/
+#header-search{
+  height: 58px;
+  width: 706px;
+  border: 1px solid #03c75a;
+  background-color: #FFf;
+  border-radius: 33px;
+  position: relative;
+  left:calc(50% - 353px);
+  display: flex;
+  justify-content: flex-start;
+}
+
+#header-search>.logo-img{
+  width: 67px;
+  height: 58px;
+  padding: 17px 16px 17px 27px;
+  box-sizing: border-box;
+  border: 0;
+  display: flex;
+  background-color: transparent;
+}
+
+.logo-img>svg{
+  width:24px;
+  height: 24px;
+  fill: #03c75a;
+}
+
+
+#header-search>input{
+  width:526px;
+  /* 원래는 460px인데 여백을 옮기는 작업을 후에 하려니까 그룹화가 제대로 되어있지 않음... */
+  height:58px;
+  padding:17px 0;
+  border: 0;
+  
+}
+
+#header-search>.keyboard{
+  width:30px;
+  height:58px;
+  padding:22px 3px;
+  position:relative;
+  border: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.keyboard>div{
+  width:24px;
+  height:14px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -148px -301px;
+}
+
+#header-search>.search-drop{
+  width:22px;
+  height:58px;
+  padding:26px 6px;
+  position:relative;
+  border: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.search-drop>div{
+  width:10px;
+  height:6px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -221px -184px;
+
+}
+
+#header-search>.search-symb{
+  width: 62px;
+  height: 58px;
+  padding: 17px 27px 16px 10px;
+  box-sizing: border-box;
+  position:relative;
+  border: 0;
+  display: flex;
+  background-color: transparent;
+  
+}
+/* -----------------중간 검색창------------- */
+#header-link{
+  width:680px;
+  height:68px;
+  left: calc(50% - 340px);
+  bottom:5%;
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-link>div{
+  width: 64px;
+  height:68px;
+  text-align: center;
+}
+
+#header-link>div>img{
+  width:40px;
+  height:40px;
+}
+
+.메일>img{
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -205px -219px;}
+
+.카페>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -41px -219px;}
+
+.블로그>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: 0px -219px;
+}
+
+.쇼핑>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -41px -260px;
+}
+.뉴스>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -270px -205px;
+}
+.증권>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -123px -260px;
+}
+.부동산>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: 0px -260px;
+}
+.지도>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -270px 0px;
+}
+.웹툰>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -164px -260px;
+}
+.치지직>img{
+
+}
+.etc>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -270px -164px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------main----------------------------////// */
+
+main{
+  width:1280px;
+  height:2800px;
+  margin:0 auto;
+  padding-bottom:60px;
+  /* position:relative; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  /* align-items: stretch; */
+  background-color: rgb(0,50,50,0.5);
+}
+
+.main{
+  width:1280px;
+  height:2800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: rgb(0,50,50,.05);
+}
+
+#main-left{
+  width:830px;
+  height:auto;
+  background-color:rgba(23, 125, 203, 0.351);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+}
+
+#main-left>*{
+  width:inherit;
+}
+
+.left-adv{
+    height: 130px;
+}
+.left-news{
+  height: 426px;
+  margin:16px;
+  /* box-sizing: content-box; */
+  
+}
+.left-shop{
+  height:560px;
+}
+/* .left-recommend{
+  width:790px;
+  height:2507px;
+  /* margin: 0 20px; */
+
+#main-right{
+  width:420px;
+  height:auto;
+  background-color:rgba(23, 125, 203, 0.351);
+}
+.right-login{
+  width:380px;
+  height:125px;
+  padding:20px;
+}
+.right-adv1{
+  width:420px;
+  height: 240px;
+}
+
+.right-img{
+  width:420px;
+  height: 80px;
+}
+.right-adv2{
+  width:384px;
+  height: 136px;
+  padding: 18px;
+}
+.right-wth{
+  width:384px;
+  height: 236px;
+  padding: 0 18px;
+}
+.right-fund{
+  width:384px;
+  height: 236px;
+  padding: 0 18px;
+}
+.right-adv3{
+  width:390px;
+  height: 240px;
+  padding: 0 15px;
+}
+.right-board{
+  width:420px;
+  height: 530px;
+  padding: 0 15px;
+}
+.right-adv4{
+  width:352px;
+  height: 64px;
+  padding: 8px 50px 8px 18px;
+}
+
+footer{
+  width: 1280px;
+  height:352px;
+  padding: 0 0 78px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+#campaign{
+  width: 1280px;
+  height:100px;
+  padding: 30px 0;
+}
+#notif{
+  width: 1280px;
+  height:17px;
+  padding: 21px 0;
+}
+#address{
+  width: 1280px;
+  height:90px;
+}
+#address{
+  width: 1280px;
+  height:20px;
+  padding: 20px 0 0 0;
+}

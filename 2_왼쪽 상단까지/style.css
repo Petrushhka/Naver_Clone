@@ -1,0 +1,776 @@
+@import url(reset.css);
+body{
+  width:100vw;
+  height: 1000vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+
+header,main,aside,footer{
+  /* background-color: rgba(100,200,0,0.5) ; */
+}
+
+header{
+    width:1280px;
+    height: 215px;
+    margin:0 auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;    
+}
+header>*{
+  border: 1px dotted black ;
+  /* 추후 지울것 */
+  width:inherit;
+}
+#header-icon{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: stretch;
+height: 48px;
+width:inherit;
+background-color: transparent;
+}
+.icon-left{
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  width:200px;
+}
+.icon-right{
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: 16px;
+  width:500px;
+}
+
+#header-icon>div>button{
+  width:48px;
+  height: 48px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 0;
+}
+
+#header-icon>div>button>div{
+  width:32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.바로가기 div{
+  
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -311px -166px;
+}
+.pay div{
+      background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -248px -260px;
+}
+
+.talk div{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -99px -316px;
+  }
+
+.alarm div{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -311px -232px;
+}
+.basket div{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -311px -166px;
+}
+
+/* 맨위 헤더*/
+#header-search{
+  height: 58px;
+  width: 706px;
+  border: 1px solid #03c75a;
+  background-color: #FFf;
+  border-radius: 33px;
+  position: relative;
+  left:calc(50% - 353px);
+  display: flex;
+  justify-content: flex-start;
+}
+
+#header-search>.logo-img{
+  width: 67px;
+  height: 58px;
+  padding: 17px 16px 17px 27px;
+  box-sizing: border-box;
+  border: 0;
+  display: flex;
+  background-color: transparent;
+}
+
+.logo-img>svg{
+  width:24px;
+  height: 24px;
+  fill: #03c75a;
+}
+
+
+#header-search>input{
+  width:526px;
+  /* 원래는 460px인데 여백을 옮기는 작업을 후에 하려니까 그룹화가 제대로 되어있지 않음... */
+  height:58px;
+  padding:17px 0;
+  border: 0;
+  
+}
+
+#header-search>.keyboard{
+  width:30px;
+  height:58px;
+  padding:22px 3px;
+  position:relative;
+  border: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.keyboard>div{
+  width:24px;
+  height:14px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -148px -301px;
+}
+
+#header-search>.search-drop{
+  width:22px;
+  height:58px;
+  padding:26px 6px;
+  position:relative;
+  border: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.search-drop>div{
+  width:10px;
+  height:6px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -221px -184px;
+
+}
+
+#header-search>.search-symb{
+  width: 62px;
+  height: 58px;
+  padding: 17px 27px 16px 10px;
+  box-sizing: border-box;
+  position:relative;
+  border: 0;
+  display: flex;
+  background-color: transparent;
+  
+}
+/* -----------------중간 검색창------------- */
+#header-link{
+  width:680px;
+  height:68px;
+  left: calc(50% - 340px);
+  bottom:5%;
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-link>div{
+  width: 64px;
+  height:68px;
+  text-align: center;
+}
+
+#header-link>div>img{
+  width:40px;
+  height:40px;
+}
+
+.메일>img{
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -205px -219px;}
+
+.카페>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -41px -219px;}
+
+.블로그>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: 0px -219px;
+}
+
+.쇼핑>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -41px -260px;
+}
+.뉴스>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -270px -205px;
+}
+.증권>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -123px -260px;
+}
+.부동산>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: 0px -260px;
+}
+.지도>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -270px 0px;
+}
+.웹툰>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -164px -260px;
+}
+.치지직>img{
+
+}
+.etc>img{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -270px -164px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------main----------------------------////// */
+
+main{
+  width:1280px;
+  height:2800px;
+  margin:0 auto;
+  padding-bottom:60px;
+  /* position:relative; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  /* align-items: stretch; */
+  background-color: rgb(0,50,50,0.5);
+}
+
+.main{
+  width:1280px;
+  height:2800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: rgb(0,50,50,.05);
+}
+
+#main-left{
+  width:830px;
+  height:auto;
+  background-color:rgba(140, 203, 23, 0.351);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+}
+
+#main-left>*{
+  width:inherit;
+  
+}
+
+
+.left-news{
+  height: 426px;
+  margin-top:16px;
+  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .04);
+  border-radius: 8px;
+  position: relative;
+  /* box-sizing: content-box; */
+  }
+
+.left-news>.news-header{
+  width:830px;
+  height:58px;
+  padding:18px 20px 17px;
+  box-sizing: border-box;
+  }
+.news-header ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.news-header li{
+  display:inline-block;
+  height:23px;
+  font-size:1.0rem;
+  line-height:23px;
+  font-weight: 800;
+  vertical-align: top;
+  color: rgba(8, 8, 8, .5);
+}
+
+.news-header li:nth-child(1){
+  color:#080808;
+  width: 82px;
+  text-align: right;
+}
+.news-header li:nth-child(2){
+  width: 100px;
+  list-style-type: circle;
+}
+.news-header li:nth-child(2)::before{
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #d3d5d7;
+  margin: 9px 7px 0;
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.news-header li:nth-child(3){
+  width: 59px;
+  padding: 0 0 0 26px;
+}
+.news-header li:nth-child(3)::before{
+  content: "";
+  display:inline-block;
+  position: absolute;
+  top: 4px;
+  left: 195px;
+  width: 1px;
+  height: 15px;
+  background-color: #d3d5d7;
+  transform: skewX(-15deg);
+}
+.news-header li:nth-child(4){
+  width: 75px;
+  padding: 0 0 0 26px;
+}
+.news-header li:nth-child(4)::before{
+  content: "";
+  display:inline-block;
+  position: absolute;
+  top: 4px;
+  left: 255px;
+  width: 1px;
+  height: 15px;
+  background-color: #d3d5d7;
+  transform: skewX(-15deg);
+}
+
+.news-header li:nth-child(5){
+  width: 59px;
+  padding: 0 0 0 26px;
+}
+.news-header li:nth-child(5)::before{
+  content: "";
+  display:inline-block;
+  position: absolute;
+  top: 4px;
+  left: 330px;
+  width: 1px;
+  height: 15px;
+  background-color: #d3d5d7;
+  transform: skewX(-15deg);
+}
+
+.news-header li:nth-child(6){
+  width: 108px;
+  padding: 0 0 0 26px;
+}
+.news-header li:nth-child(6)::before{
+  content: "";
+  display:inline-block;
+  position: absolute;
+  top: 4px;
+  left: 390px;
+  width: 1px;
+  height: 15px;
+  background-color: #d3d5d7;
+  transform: skewX(-15deg);
+}
+/* -------------------------------- */
+.left-news>.news-contentheader{
+  width: 790px;
+  height:50px;
+  padding: 12px 20px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+  background-color:#f5f7f8;
+border-radius: 8px;
+}
+
+.news-contentheader>ul{
+  display: flex;
+  flex-direction: row;
+  
+}
+.news-contentheader>ul li{
+  font-size:0.85rem;
+  
+}
+
+.news-contentheader li:nth-child(1){
+  width:90.3px;
+  height:26px;
+  display: flex;
+  }
+.news-contentheader li:nth-child(1)>i{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -242px -184px;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 6px;
+    display: inline-block;
+    margin: 10px 0 0 5px;
+    align-self: flex-start;
+}
+.news-contentheader li:nth-child(2){
+  width:617px;
+  padding-left:26px;
+  height:26px;
+  display: inline-block;
+  vertical-align: top;
+}
+.news-contentheader li:nth-child(2)::before{
+  content: "";
+    display:inline-block;
+    position: relative;
+    top: 2px;
+    left: -8px;
+    background-color: #d3d5d7;
+    width: 1px;
+    height: 12px;
+    position: relative;
+}
+
+.news-contentheader li:nth-child(3){
+  width:43px;
+  height:26px;
+  display: inline-block;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+/* -------------------------------------------------------------- */
+
+.news-channel{
+  margin: 18px 20px 18px 20px;
+  width: 790px;
+  height: 223.7px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  
+}
+.news-channel-2{
+  width: inherit;
+  height: inherit;
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap:0;
+  align-content: flex-start;
+}
+
+.news-channel-2>div{
+  width:131.33px;
+  height:56px;
+  padding: 18px 0;
+  display:inline;
+  text-align: center;
+  position:static;
+}
+
+.channellist-sty{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left:0;
+  top:0;
+}
+.channellist-sty>i{
+  /* display: inline-block; */
+  z-index: 1;
+  position: absolute;
+  background-color:#ebebeb;
+}
+.channellist-sty>i:nth-child(1){
+  top: 56px;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+.channellist-sty>i:nth-child(2){
+  top: 112px;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+.channellist-sty>i:nth-child(3){
+  top: 168px;
+  left: 0;
+  right: 0;
+  height: 1px;
+
+}
+.channellist-sty>i:nth-child(4){
+  left: 132px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
+.channellist-sty>i:nth-child(5){
+  left: 263px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
+.channellist-sty>i:nth-child(6){
+  left: 394px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
+.channellist-sty>i:nth-child(7){
+  left: 526px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
+.channellist-sty>i:nth-child(8){
+  left: 657px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
+
+/* --------------------------------------------- */
+
+.news-footer{
+  width:830px;
+  height: 57.8px;
+  padding:10px 0 11px 0;
+  margin:0.83px 0 0 0; 
+  display: flex;
+  justify-content:center;
+  border-top: 1px solid #ebebeb;
+  
+}
+
+.news-lf-key,.news-rg-key{
+  width: 36px;
+  height: 36px;
+  border:0.833px;
+  padding:0;
+  display:inline-block;
+}
+.news-lf-key>div{
+  width:10px;
+  height:12px;
+  margin:11.6px 12.162px 11.172px 12.162px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -452px -104px;
+  transform: rotate(180deg);
+}
+
+.news-rg-key>div{
+  width:10px;
+  height:12px;
+  margin:11.6px 12.162px 11.172px 12.162px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -452px -104px;
+}
+
+.view-list{
+  position:absolute;
+  left: 730px;
+  top:368px;
+  display: flex;
+  width:98px;
+  height:57px;
+}
+.view-list>button{
+  width:49px;
+  height:56px;
+  padding:18px 20px 18px 9px;
+  border:0;
+  background-color: transparent;
+}
+.view-list>.article{
+  padding: 18px 9px 18px 20px;
+}
+.view-list>button>div{
+  width:20px;
+  height:20px;
+}
+
+.article>div{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+  background-size: 463px 440px;
+  background-position: -219px -376px;
+}
+.newslist>div{
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.85969987.png);
+    background-size: 463px 440px;
+    background-position: -401px -403px;
+}
+.contentpaging{
+  width: 156px;
+  height: 35px;
+  padding: 0 16px;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+  vertical-align: top;
+  color:#606060;
+}
+.contentpaging p{
+  color: #3a67ea;
+  display:inline;
+}
+.contentpaging>span:nth-child(3){
+  color: #ebebeb
+}
+/* ------------------------------------------- */
+
+.left-shop{
+  width:830.833px;
+  height:560px;
+border:#03c75a;
+display: flex;
+}
+
+
+#main-right{
+  width:420px;
+  height:auto;
+  background-color:rgba(23, 125, 203, 0.351);
+}
+.right-login{
+  width:380px;
+  height:125px;
+  padding:20px;
+}
+.right-adv1{
+  width:420px;
+  height: 240px;
+}
+
+.right-img{
+  width:420px;
+  height: 80px;
+}
+.right-adv2{
+  width:384px;
+  height: 136px;
+  padding: 18px;
+}
+.right-wth{
+  width:384px;
+  height: 236px;
+  padding: 0 18px;
+}
+.right-fund{
+  width:384px;
+  height: 236px;
+  padding: 0 18px;
+}
+.right-adv3{
+  width:390px;
+  height: 240px;
+  padding: 0 15px;
+}
+.right-board{
+  width:420px;
+  height: 530px;
+  padding: 0 15px;
+}
+.right-adv4{
+  width:352px;
+  height: 64px;
+  padding: 8px 50px 8px 18px;
+}
+
+footer{
+  width: 1280px;
+  height:352px;
+  padding: 0 0 78px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+#campaign{
+  width: 1280px;
+  height:100px;
+  padding: 30px 0;
+}
+#notif{
+  width: 1280px;
+  height:17px;
+  padding: 21px 0;
+}
+#address{
+  width: 1280px;
+  height:90px;
+}
+#address{
+  width: 1280px;
+  height:20px;
+  padding: 20px 0 0 0;
+}

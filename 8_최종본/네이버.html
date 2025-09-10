@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="header-icon">
+      <div class="icon-left">
+        <button type="button" class="바로가기">
+          <div></div>
+          <span>바로가기</span>
+        </button>
+        <button type="button" class="pay">
+          <div></div>
+          <span>네이버페이</span>
+        </button>
+      </div>
+      <div class="icon-right">
+        <button type="button" class="talk">
+          <div></div>
+          <span>네이버톡</span>
+        </button>
+        <button type="button" class="alarm">
+          <div></div>
+          <span>알림혜택</span>
+        </button>
+        <button type="button" class="basket">
+          <div></div>
+          <span>장바구니</span>
+        </button>
+      </div>
+    </div>
+    <!-- ------------------------------------- -->
+    <div id="header-search">
+      <button class="logo-img">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path></svg>
+      </button>
+      <input id="search-logo" type="search" placeholder="검색어를 입력하세요">
+      <button type="button" class="keyboard">
+        <div></div>
+      </button>
+      <button type="button" class="search-drop">
+        <div></div>
+      </button>
+      <button type="submit" class="search-symb">
+        <svg id="search-btn" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" style="fill: #03c75a"> <path d="M22.13.5c11.378 0 20.632 9.256 20.632 20.63 0 4.699-1.566 9.155-4.439 12.782l10.164 10.165a2.41 2.41 0 0 1-1.706 4.115 2.412 2.412 0 0 1-1.706-.705L33.31 35.719a2.41 2.41 0 0 1 0-3.41 15.71 15.71 0 0 0 4.628-11.178c0-8.718-7.09-15.808-15.807-15.808-8.718 0-15.808 7.09-15.808 15.808 0 7.15 4.817 13.43 11.714 15.273a2.41 2.41 0 0 1 1.705 2.954 2.41 2.41 0 0 1-2.95 1.705C7.788 38.658 1.5 30.46 1.5 21.131 1.5 9.756 10.756.5 22.13.5zm4.716 34.746a3.483 3.483 0 1 1 0 6.966 3.483 3.483 0 0 1 0-6.966z"></path> </svg>
+      </button>
+    </div>
+    <!-- -------------------------------------- -->
+    <div id="header-link">
+      <div class="메일">
+        <img>
+        <div>메일</div>
+      </div>
+      <div class="카페">
+        <img>
+        <div>카페</div>
+      </div>
+      <div class="블로그">
+        <img>
+        <div>블로그</div>
+      </div>
+      <div class="쇼핑">
+        <img>
+        <div>쇼핑</div>
+      </div>
+      <div class="뉴스">
+        <img>
+        <div>뉴스</div>
+      </div>
+      <div class="증권">
+        <img>
+        <div>증권</div>
+      </div>
+      <div class="부동산">
+        <img>
+        <div>부동산</div>
+      </div>
+      <div class="지도">
+        <img>
+        <div>지도</div>
+      </div>
+      <div class="웹툰">
+        <img>
+        <div>웹툰</div>
+      </div>
+      <div class="치지직">
+        <img src="https://s.pstatic.net/static/www/mobile/edit/20240112_1095/upload_1705057885416AaxUM.png" width="40" height="40" class="service_img" alt="치지직">
+        <div>치지직</div>
+      </div>
+      <div class="etc">
+        <img>
+        <div>기타</div>
+      </div>      
+  </header>
+
+  <!-- ---------------------------- -->
+  <main>
+    <section class="main">
+      <div id="main-left">
+        <img src="https://ssl.pstatic.net/melona/libs/1482/1482220/3518e4b79b6afd872216_20240124170531254.png" width="830" height="130" alt="[광고]고객의 생각이 궁금할 땐? 소비자조사 솔루션으로 직접 물어보세요">
+        <div class="left-news">
+          <div class="news-header">
+            <ul>
+              <li>뉴스스탠드</li>
+              <li>언론사편집</li>
+              <li>엔터</li>
+              <li>스포츠</li>
+              <li>경제</li>
+              <li>쇼핑투데이</li>
+            </ul>
+          </div>
+          <div class="news-contentheader">
+            <ul>
+              <li>분야별 뉴스
+                <i></i>
+              </li>
+              <li>
+                <ul>
+                  <li>대만 총통 비상사태 선포, 중국 공격 전쟁임박
+                  </li>
+                  <li>최초 동양권 노벨문학상 주인공은 한국인
+                  </li>
+                  <li>위더스제약 탈모주사제 임상 3상 통과
+                  </li> 
+                </ul>
+              </li>
+              <li>뉴스홈</li>
+            </ul>
+          </div>
+          <div class="news-channel">
+            <div class="news-channel-2">
+              <div><img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo"></div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div>
+                <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+              </div>
+              <div class="channellist-sty">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------------------ -->
+          <div class="news-footer">
+              <button class="news-lf-key" type="button">
+                <div></div>
+              </button>
+              <div class="contentpaging">
+                <span><p>언론사</p> 더보기</span>
+                <span>1</span>
+                <span>/4</span>
+              </div>
+              <button class="news-rg-key" type="button">
+                <div></div>
+              </button>
+              <div class="view-list">
+                <button class="article">
+                </button>
+                <button class="newslist">
+                  <div></div>
+                </button>
+              </div>            
+            </div>
+          </div>
+          <div class="left-shop">
+            <div class="shop-header">
+              <div class="shop-lf-hdr">
+                <ul>
+                  <li>쇼핑</li>
+                  <li>맨즈</li>
+                  <li>원쁠딜</li>
+                  <li>쇼핑라이브</li>
+                </ul>
+              </div>
+              <div class="shop-rg-hdr">
+                <div>
+                  <span>1</span><span>/13</span>
+                </div>              
+                <button class="shop-btn-lf">
+                  <div></div>
+                </button>
+                <button class="shop-btn-rg">
+                  <div></div>
+                </button>
+              </div>
+            </div>
+            <div class="shop-main">
+              <div class="commerceview">
+                <div class="mallname">
+                  <div>쿠팡</div>
+                  <div>g마켓</div>
+                  <div>옥션</div>
+                  <div>ssg닷컴</div>
+                  <div>11번가</div>
+                  <div>올리브영</div>
+                  <div>하프클럽</div>
+                  <div>gs shop</div>
+                  <div>cj온스타일</div>
+                </div>
+                <div class="quickmenu">
+                  <ul>
+                    <li>
+                      <div class="shopmyimg">
+                        <div></div>
+                        <div>쇼핑MY</div>
+                      </div>                      
+                    </li>
+                    <li>
+                      <div class="rvwimg">
+                        <div></div>
+                        <div>리뷰적립</div>
+                      </div>                      
+                    </li>
+                    <li>
+                      <div class="odr">
+                        <div></div> 
+                        <div>주문</div>
+                      </div>                      
+                    </li>
+                    <li>
+                      <div class="bskt">
+                        <div></div>
+                        <div>장바구니</div>
+                      </div>                      
+                    </li>
+                  </ul>
+                </div>
+                <img src="https://s.pstatic.net/shopping.phinf/20241011_5/b5fa3fc3-fcf0-466b-aa2b-6a7b7c6aa460.jpg" width="248" height="146" alt="달콤새콤 맛있는 매실맛 효소!">
+                <div class="focusitem">
+                  가입하면 최대 76,000원 쿠폰팩이?
+                </div>
+
+              </div>
+              <div class="hot-item">
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20241015_10/f65892f4-ad7d-4fc0-a8aa-a1784e5f9262.jpg?type=f294_378" width="98" height="126" alt="한정수량 1+1 빨간물 다이어트">
+                  <span>한정수량 1+1</span>
+                  <p>빨간물 다이어트</p>
+                </div>
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20241015_8/acb43a7f-14de-4c1b-a667-943ff1ab5425.jpg?type=f294_378" width="98" height="126" alt="ALL~최대90%↓ 아우터2만원대?">
+                  <span>온종일 개운하게</span>
+                  <p>최대 62% ↓</p>
+                </div>
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20241014_24/f881429b-8c15-4c91-89eb-c23595fd85cd.jpg?type=f294_378" width="98" height="126" alt="브랜드 퀄리티 이만한게 없어~">
+                  <span>브랜드 퀄리티</span>
+                  <p>편안하고 예쁘게</p>
+                </div>
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20241011_17/e7673d0f-c334-484f-856e-99c67d9b5965.jpg?type=f294_378" width="98" height="126" alt="이건 정말놀랍다 볼수록 맘에들어">
+                  <span>이건 정말 놀랍다</span>
+                  <p>볼수록 맘에들어</p>
+                </div>
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20240923_9/759cb35a-c17a-457a-a6f2-edce3c3b2ec5.jpg?type=f294_378" width="98" height="126" alt="가을내내~Best~ 2만원대Sale중!">
+                  <span>가을내내~Best~</span>
+                  <p>2만원대Sale중!</p>
+                </div>
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20241014_26/ca120e7b-265f-4c08-934a-b6bf8b686874.jpg?type=f294_378" width="98" height="126" alt="전상품 ALL 10% 오늘신상 원피스">
+                  <span>전상품 ALL 10%</span>
+                  <p>오늘신상 원피스</p>
+                </div>
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20241010_6/0acca249-c681-4cd1-b76c-518e16c6e540.jpg?type=f294_378" width="98" height="126" alt="송해나원피스 75%OFF+20%">
+                  <span>송혜나원피스</span>
+                  <p>75%OFF+20%</p>
+                </div>
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20241015_16/b643b271-f7d7-46fc-b78e-0d97189f5a3e.jpg?type=f294_378" width="98" height="126" alt="먹는 순간 감탄! 하루종일 생각나">
+                  <span>먹는 순간 감탄!</span>
+                  <p>하루종일 생각나</p>
+                </div>
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20241010_16/ae75747b-8c2c-4826-82ad-2443f47ae5a8.jpg?type=f294_378" width="98" height="126" alt="탈모샴푸5개 10000원 곧 종료">
+                  <span>탈모샴푸 5개</span>
+                  <p>10000원 곧 종료</p>
+                </div>
+                <div>
+                  <img src="https://s.pstatic.net/shopping.phinf/20241014_21/60fcba20-3335-4f05-86f5-6d6ddbad1043.jpg?type=f294_378" width="98" height="126" alt="원단이 좋은옷~ 브랜드 그이상~">
+                  <span>원단이 좋은옷~</span>
+                  <p>브랜드 그이상~</p>
+                </div>
+              </div>
+            </div>
+            <div class="todaypick">
+              <div>
+                <span>오늘의 혜택</span>
+                <img height="13" src="https://s.pstatic.net/shopping.phinf/20230524_6/dfbbf224-73a7-416c-bf0b-9f63a6cff5b9.jpg" alt="11번가">
+                <span>최대 79% 할인! 유통기한 임박상품 할인찬스 11번가 임박마켓!</span>
+              </div>
+            </div>
+            <div class="shop-footer">
+              <button class="shop-lf-key" type="button">
+                <div></div>
+              </button>
+              <div class="s-f-text">
+                <span><p>쇼핑아이템</p> 더보기</span>
+                <span>1</span>
+                <span>/4</span>
+              </div>
+              <button class="shop-rg-key" type="button">
+                <div></div>
+              </button>
+              <button class="adbt">AD</button>
+            </div>
+          </div>
+<!-- --------------------------------------------------->
+
+          <div class="left-recommend">
+            <div class="rcm-hdr">
+              <ul>
+                <li>추천・구독</li>
+                <li>자동차</li>
+                <li>웹툰</li>
+                <li>패션뷰티</li>
+                <li>푸드</li>
+                <li>리빙</li>
+                <li>책방</li>
+                <li>지식+</li>
+                <li>건강</li>
+                <li>게임</li>
+              </ul>
+          </div>
+          <div class="rcm-sub">
+            <ul>
+              <li>인기</li>
+              <li>동물</li>
+              <li>여행</li>
+              <li>연애결혼</li>
+              <li>영화</li>
+              <li>육아</li>
+            </ul>
+            <div>구독홈</div>
+          </div>
+          <div class="rcm-main">
+            <ul class="r-m-top">
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDEwMDlfMTY0%2FMDAxNzI4NDY2Nzc4MTI4.W1fSqnB8nuMGB22DRqQXxOWDo76NQLXdjDEj78JTCGIg.L3o85d_Az56Y4m-YXP9jQeCoHzeIz16M4-a63P3OHp4g.JPEG%2Fimage_750x420.jpg%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>"이게 9백 짜리 옵션" 제네시스 SUV, 역대급 스펙, 포기할 수는 없죠.</span>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fpost.phinf%2FMjAyMDEwMTVfMTkz%2FMDAxNjAyNzQzMjY4NjEw.GlSbhA_VdhHl7OVPQuk6cnWqJSR78lvs20_mR--dlscg.lxILgNyTSQeKbs-y5H2HYvOPj-IHIkzRtSn98mChfQkg.PNG%2Fpost_1384977838082956362.png%3Ftype%3Df200_200%22&amp;type=nf96_96&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="다키포스트">
+                  <span> 디카포스트</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDEwMTRfNjYg%2FMDAxNzI4ODg3ODM4MTE5.nlu6Pt6cgg_TcWM6mE3YF82dURTZ7dABGQwI87rONwEg.O7WWcvxqA9VbdvZ_ywUF8wJuugA3WGcPWftAMOK1GFwg.JPEG%2Fimage_750x420.jpg%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>나는솔로 22기 돌싱특집 옥순 영자 영숙 대학교 직업 현커 결혼 출연진</span>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyNDEwMTRfMjQy%2FMDAxNzI4ODgwMDA1MTU1.EgaQoFfZ9hpdnrmQyIqp2XmmuBJAU8M9qzagVxy2y2Ig.Mxd5nEEqCYiRt2cdHtsIoO51oBOJL38pmSGlRrNiiSog.PNG%2FprofileImage.png%22&amp;type=nf96_96&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="시룹이루비">
+                  <span>시룹이루비</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDEwMTNfMTEg%2FMDAxNzI4ODMwNTY0MDc2.qU5V6sf6uNox3yvzCggjplLQed3tO4EyeGG70dTW-Q4g.k5MHx3RW2x37IfCUisPvLMIHle283ZjlKUsLIQb71JIg.JPEG%2Fimage_750x420.jpg%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>나는 솔로 22기 옥순 경수 현커 인정 글 은 잘 쓰네</span>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMjA1MjdfMTU0%2FMDAxNjUzNjUxMDUyNjIy.qWacazpvWnDW60zWkfq_FjMfbokM-7BaPnDE5JxXLaEg.3LpZdsA-eSFovxiG3B2I545ARDPBNXpafDsXSAPzhpkg.PNG.hhwjh%2FprofileImage.png%22&amp;type=nf96_96&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="잭">
+                  <spam>책</spam>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDEwMTFfMTMw%2FMDAxNzI4NjA5MjU1NTA3.APBkKPc0EWPu7f5J5nF75pK8NYnDNm0hjgQz96fXaw4g.7DXZSfbqkrPmI5i6Rr_LwtGWsjx-dW-WaVldmwfvLJsg.JPEG%2Fimage_750x420.jpg%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>해외 패피들의 '가을철' 진짜 코디 법</span>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fpost.phinf%2FMjAyMDA0MjdfMTgx%2FMDAxNTg3OTY0ODMwMzcw.XqGH1RZdfM74VodYyZWCmpIoBeYboyebOM3lmiXVmqog.rhXgRxxKXKSYbVioTCSkQ2_O9laTYmCR0-NQcaafkSUg.PNG%2Fpost_1502382276837190700.png%3Ftype%3Df200_200%22&amp;type=nf96_96&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="파이베트 FAIBET">
+                  <span>파이베트 FAIBET</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDEwMTRfMTQz%2FMDAxNzI4OTAwNjQxNzAw.O7wOZIyYqY0DJYr8OX70O06T2myuAqvFjBUuRsE-Dp8g.Or2f63hOrgvKTd9XWK9F4_j8dyHxlgLbEfV_CavPTQUg.JPEG%2Fimage_750x420.jpg%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>"위장막 완전히 벗겼다" 기아 스포티지 페이스리프트 포착</span>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fpost.phinf%2FMjAyMDA1MTRfMTU1%2FMDAxNTg5MzgyMjIxOTA3.ljAYogqJCdWPIh8dmOIRL8lSp2KyNfHGpXQ40SSAkpcg.QGkQMl9rNVq9UscTu7P0hCeePhwSp46QWlRq6-z-a6gg.JPEG%2Fpost_6983069669447029364.jpg%3Ftype%3Df200_200%22&amp;type=nf96_96&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="오토버프">
+                  <span>오토버프</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDEwMTJfMjQ5%2FMDAxNzI4NzI3OTg5NjIw.uvtEycCrqlZtXjGa2-DGrHBeELRf19PGMRSmb049szQg.L44F4r4rxNPf3t-E-vaaAK4qaxtDlIe4L1z38DQ_J7og.JPEG%2Fimage_750x420.jpg%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>"정부, 이들이 사회암이다" 쉬는 날에도 주민들 밤잠 설치게 하는 사람들</span>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fpost.phinf%2FMjAyMzA0MTNfMTQx%2FMDAxNjgxMzM5NTc4OTQ2.2K62NJiTe2oDFtuiC4EinU7NWUR0hDUS_JgV5e4thOkg.-qITO18diraMQJAmFC65kqU948v5a6Q4yL9Juv6Botcg.PNG%2Fpost_4710415014269329039.png%3Ftype%3Df200_200%22&amp;type=nf96_96&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="카글">
+                  <span>카글</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20241011_155%2F17286313827409mNFY_PNG%2F%25B0%25EC%25B4%25EB%25EA%25B01.png%3Ftype%3Df464_260%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>가을을 만끽하는 제철 음식! 해남에서 온 전어회</span>
+                <button><span></span>펀딩</button>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20240909_170%2F1725871757183g6kJv_PNG%2F0.Ci.png%22&amp;type=nf40_40&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="서툰어부가">
+                  <span>서툰어부가</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://naverpa-phinf.pstatic.net/MjAyNDEwMTFfMjYy/MDAxNzI4NjM1MTgwNjEx.yY-DSgvQmqIuqqs-mA6q2QpKNHoc4raeyZuZHm_OsHAg.dlhIWmr8u8V6AZcrq_HmkWbUTPQbGhONutQv6EWLJh0g.JPEG/342-228_3_1728635180598433190101818236674.jpg" width="100%" height="120" alt="광고 이미지">
+                <span>와이드뷰 네쇼페, 1년에 딱 일주일!</span>
+                <button class="ad-close"></button>
+                <div>
+                  <span>와이드뷰</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20241011_23%2F17286128702476XVgT_JPEG%2Fgpoun.jpg%3Ftype%3Df464_260%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>매월 돌아오는 생리기간, 늘어나는 소녀들의 한숨</span>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20180227_220%2Fhlog_g07069_1519708343215uQxwc_JPEG%2F%ED%95%B4%ED%94%BC%EB%B9%88%EB%A1%9C%EA%B3%A0.jpg%22&amp;type=nf40_40&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="지파운데이션">
+                  <span>지파운데이션</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDEwMTVfMjcz%2FMDAxNzI4OTU4NzMwMTc3.0jUST-KV2DxTtpr7GR3WTNrxqd59zZKY99suMKuM13sg.2ufxMJ_FSQYXksz3qDvA7gPaqZ_jzaupquTsmo41aQgg.JPEG%2Fimage_750x420.jpg%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>인생이 운빨이라고 말하는 의사.jpg</span>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyNDA3MTRfOTUg%2FMDAxNzIwOTA2MDQ1ODMx.sIu-78k7Qrb_AIbMmo0q_gHWPJaADf3OQ20AXrUTUtsg.xqafMiXxsXyHOctL_rmmCR_XmS1rNS79zPNn3xbORt0g.JPEG%2FprofileImage.jpg%22&amp;type=nf96_96&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="mandy">
+                  <span>mandy</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDEwMTBfMjQy%2FMDAxNzI4NTM4Nzk0Nzk3.aojK20ZfWGBJT7q4y38uJwTs_KSMUY4j7s9v2pMJ1sgg.EZ6hdqvKHfHAPAFyq-rBPZpWTICyDZSVecLkWFYssrog.JPEG%2Fimage_750x420.jpg%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>122년 전 철학자 曰 "자식 평생을 망치는 최악의 부모 행동</span>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fpost.phinf%2FMjAxODA1MTZfNCAg%2FMDAxNTI2NDMxNzQ2MDc1.XjtcGs4tnIEfQCX5iFWn4xYZ5Ixhkro2OBOITXTDnmAg.X9ByriF0RtBGpZz7BORlwkDyF-Ow_mgberADCTtA8pMg.JPEG%2Fpost_5768827740542852999.jpg%3Ftype%3Df200_200%22&amp;type=nf96_96&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="포레스트북스">
+                  <span>포레스트북스</span>
+                </div>
+              </li>
+              <li>
+                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20240903_18%2F17253246966128uHj3_JPEG%2F31-8.jpg%3Ftype%3Df464_260%22&amp;type=nf365_240&amp;service=navermain" width="100%" height="120" loading="lazy">
+                <span>강아지에 진심인 보호소를 함께 만들어요!</span>
+                <button><span></span>펀딩</button>
+                <div>
+                  <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20210505_239%2F1620168772535WhK5N_PNG%2F%25BA%25ED%25B7%25CE%25B1%25D7%25BF%25EB%25B7%25CE%25B0%25ED3.png%3Ftype%3Dw180%22&amp;type=nf40_40&amp;service=navermain" width="20" height="20" class="FourColumnItemView-module__profile_img___eIjn7" alt="팅커벨프로젝트">
+                  <span>팅커벨프로젝트</span>
+                </div>
+              </li>
+            </ul>
+            <div class="r-m-footer">
+              <div class="r-m-f-header">
+              <span>매일 찾는 짧은 즐거움</span>
+              </div>
+              <div class="r-m-f-main">
+                <ul>
+                  <li>
+                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20241007_114%2FC3FBT_1728307078940z6M8G_PNG%2F1728307054519.png%22&amp;type=f216_324&amp;service=navermain" width="100%" height="156" loading="lazy">
+                    <span>한 방에 1등 상품 뽑고 세팅까지 바꿔버림ㅋㅋ</span>
+                    <p>고나두욘몬</p>
+                  </li>
+                  <li>
+                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20241015_18%2FPZvG8_17289689423587QYuB_JPEG%2F442DE779-79EC-4257-BA77-5B1639363EA5.jpg%22&amp;type=f216_324&amp;service=navermain" width="100%" height="156" loading="lazy">
+                    <span>빛난다 이진욱 배우님</span>
+                    <p>포토제이림</p>
+                  </li>
+                  <li>
+                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20241015_240%2Fe7EQf_17289745876498UOmu_JPEG%2FO8S9uFpzSq_01.jpg%22&amp;type=f216_324&amp;service=navermain" width="100%" height="156" loading="lazy">
+                    <span>요즘 04들은 클럽에서 이 춤 춘다며?</span>
+                    <p>뚜떠즈</p>
+                  </li>
+                  <li>
+                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20241015_168%2FuV6QF_1728949834480OtYJC_JPEG%2FE7937A17-8B19-49D5-AAEC-09C4D4921C71.jpg%22&amp;type=f216_324&amp;service=navermain" width="100%" height="156" loading="lazy">
+                    <span>트레이너 쌤이 T감성 충만할때 생기는 일 #트레이너 #헬스 #운동 #하체운동 #다이어트 #운동하는여자</span>
+                    <p>하음필라테스</p>
+                  </li>
+                  <li>
+                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20241015_134%2F4MzRl_1728972041856mjpIz_JPEG%2FPublishThumb_20241015_150032_206.jpg%22&amp;type=f216_324&amp;service=navermain" width="100%" height="156" loading="lazy">
+                    <span>뱀 나온 LA다저스 덕아웃 ㅋㅋㅋㅋㅋㅋ</span>
+                    <p>크보톡 KBO Talk</p>
+                  </li>
+                  <li>
+                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20241015_14%2F8vp4y_1728979139153l18lV_JPEG%2FF00301BD-EA80-4889-B673-319359F2999C.jpg%22&amp;type=f216_324&amp;service=navermain" width="100%" height="156" loading="lazy">
+                    <span>꽂기만 하면 내 연습장 티높이 완성
+                      #광고
+                      </span>
+                      <p>김짜유골프</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="spread">
+            <button>펼쳐보기 +</button>
+          </div>
+        </div>
+      </div>
+      <div id="main-right">
+        <div class="right-login">
+          <div class="r-l-section">
+            <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+            <div class="r-l-click">
+              <span></span>로그인
+            </div>
+            <div class="r-l-foot">
+              <span>아이디 찾기</span>
+              <span>비밀번호 찾기</span>
+              <span>회원가입</span>
+            </div>
+          </div>
+        </div>
+        <div class="right-adv1">
+          <div class="r-a-body">
+            <img src="https://ssl.pstatic.net/melona/libs/1514/1514417/30b6acaeae243f9af7aa_20241014163824289.png" width="420" height="240" alt="[광고]네이버 홈피드의 새로운 물결에 함께할 블로거 700명을 모집합니다">
+          </div>
+        </div>
+        <div class="right-img">
+          <img src="https://s.pstatic.net/static/www/mobile/edit/20241014_1095/upload_1728868552849COB5B.jpg" width="420" height="80" alt="오픈런 온라인에서 가장 빠르게 만나는 신상 10/7-10/20">
+        </div>
+        <div class="right-adv2">
+          <div class="r-a2-body">
+            <div class="r-a2-text">
+              <span>많이 찾는</span>
+              <p>이런 상품</p>
+              <p>추천</p>
+              <button>AD</button>
+            </div>
+            <div class="r-a2-product">
+              <ul>
+                <li>
+                  <img class="recoShoppingView_img__udoPB" src="https://phinf.pstatic.net/dthumb/?src=https://searchad-phinf.pstatic.net/MjAyMzAxMjRfMjYg/MDAxNjc0NTM2MzYxODE4.qstNKla5jCHP0Lkam4vGqSg4jK-4vEfdH2jK6vzmZTEg.xIjEfZATD5_Ak5jk9X8vikR8-qriRKcV0GyFHDY4714g.PNG/1527413-ec2ebf4f-3a28-41ee-9232-83451765fc26.png&amp;service=shopad&amp;type=f250" width="90" height="90">
+                  <p>락앤락 프로쉐이커 컨테이너 1+1 쉐이크통</p>
+                </li>
+                <li>
+                  <img class="recoShoppingView_img__udoPB" src="https://phinf.pstatic.net/dthumb/?src=https://shopping-phinf.pstatic.net/main_3883923/38839232701.1.jpg&amp;service=shopad&amp;type=f250" width="90" height="90">
+                  <p>먼지없는 세미마이크로 바닥 매트리스 토퍼 라텍스커버 SS Q</p>
+                </li>
+                <li>
+                  <img class="recoShoppingView_img__udoPB" src="https://phinf.pstatic.net/dthumb/?src=https://shopping-phinf.pstatic.net/main_8737372/87373729708.jpg&amp;service=shopad&amp;type=f250" width="90" height="90">
+                  <p>무중력 공중부양 조명 자기부상 램프 떠있는 전구 마그네틱 조명 장식 특이한 LED전구</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-wth">
+          <div class="wth-shape">
+            <div class="wth-header">
+              <span>날씨</span>
+              <span>예보 비교</span>
+              <span>수원시 율전동</span>
+            </div>
+            <div class="wth-content">
+              <div class="wth-left">
+                <div class="wth-ph-sh">
+                  <div class="wth-photo">
+                    <div class="wthph"></div>
+                    <div class="crtwth">
+                      <p>19.9°</p>
+                      <p>흐림</p>
+                    </div>
+                  </div>
+                  <p>14도/24도</p>
+                </div>
+              <div class="dust">미세 보통 초미세 보통</div>
+              </div>
+              <div class="wth-right">
+                <ul>
+                  <li>
+                    <p>23°</p>
+                    <p>13</p>
+                  </li>
+                  <li>
+                    <p>24°</p>
+                    <p>15</p>
+                  </li>
+                  <li>
+                    <p>23°</p>
+                    <p>17</p>
+                  </li>
+                  <li>
+                    <p>18°</p>
+                    <p>19</p>
+                  </li>
+                  <!-- <li>
+                    <p>14°</p>
+                    <p>21</p>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-fund">
+          <div class="wth-header">
+            <span>증시</span>
+            <span></span>
+            <span>10.16. 15:01</span>
+          </div>
+          <div class="fndlr">
+            <div class="fnd-left">
+              <p>코스피</p>
+              <p>2,613.67</p>
+              <p>▼19.78 -0.78%</p>
+              <img src="https://ssl.pstatic.net/imgfinance/chart/mobile/mini/KOSPI_naverpc_l.png" width="180" height="72"  alt="">
+            </div>
+            <div class="fnd-right">
+              <ul>
+                <li>
+                  삼성전자<span>▼2.13%</span>
+                  <span>59,700</span>
+                </li>
+                <li>
+                  삼성전자<span>▼2.13%</span>
+                  <span>59,700</span>
+                </li>
+                <li>
+                  삼성전자<span>▼2.13%</span>
+                  <span>59,700</span>
+                </li>
+                <li>
+                  삼성전자<span>▼2.13%</span>
+                  <span>59,700</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- --------------------------------------- -->
+        <div class="right-adv3">
+          <div class="r-a3-body">
+            <p>페더스 SIGNATURE 캐리어</p>
+            <div class="r-a3-content">
+              <div>
+                <img src="https://naverpa-phinf.pstatic.net/MjAyNDEwMDJfNTUg/MDAxNzI3ODQ3Njk1Nzg5.k3ZQfOxn7aV_1j72KgYmuoFsupFsrP4LKM5Uyb9O5nwg.VhLSxe-3Ek4bBCNePkNTvDnvppvpFRu-PuNd1tiljLUg.JPEG/KakaoTalk_20240930_152930938_03_172784769577418262249463897722367.jpg" alt="광고 이미지" width="195" height="130">
+                <div class="r-a3-right">
+                  브랜드데이 특가로 만나는 할인 찬스
+                </div>
+              </div>
+              <div class="r-a3-footer">
+                <div>
+                  <img src="https://naverpa-phinf.pstatic.net/MjAyNDEwMDJfOCAg/MDAxNzI3ODQ3NTQwMjc1.L4w6J60wIRgU0W47aqpRZPN4A2L5BP2o6iNJqEViWjQg.upaYLslKUJ-KtjJGIuVY34940JTbhUzRNY8n9lqDZTIg.JPEG/%EC%9D%B4%EB%AF%B8%EC%A7%80_23_17278475402677244596745783753193.jpg" width="22" height="22" alt="광고 이미지">
+                  <span>페더스</span>
+                  <span>더 알아보기&gt;</span>
+                </div>
+              </div>
+            </div>  
+          </div>  
+        </div>
+        <div class="right-board">
+          <div class="r-b-header">
+            위젯보드
+          </div>
+          <div class="r-b-body">
+            <div class="rb-shape">
+              <div class="rb-header">
+                영어사전
+              </div>
+              <div class="rb-content">
+                <div>I think this chicken is undercooked.</div>
+                <div>제 생각엔 이 치킨은 덜 익은 듯해요.</div>
+              </div>
+            </div>
+            <div class="ppg">
+              <div class="papago">
+                <div class="ppg-logo"></div>
+                <div class="ppg-trns">번역하기</div>
+              </div>
+              <div class="papago">
+                <div class="p-m-header">
+                  <div>메모하기</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="https://s.pstatic.net/static/www/mobile/edit/20241014_1095/upload_1728868552849COB5B.jpg" width="420" height="80" alt="오픈런 온라인에서 가장 빠르게 만나는 신상 10/7-10/20">
+    </section>
+  </main>
+  <footer>
+    <div id="campaign">
+      <div class="cmp-1">
+        <img class="thumb_img" src="https://ssl.pstatic.net/melona/libs/1510/1510136/c4abc888c4bf8d09461a_20240930184849360.jpg" width="160" height="100" alt="광고 이미지">
+        <div class="kanu">
+          <strong>KANU</strong>
+          <p>[NEW]카누 싱글오리진 출시</p>
+          <p>카누 네스프레소 호환캡슐</p>
+          <p>신상캡슐 3종 최대 44% 할인</p>
+        </div>
+      </div>
+      <div class="cmp-2">
+        <img class="thumb_img" src="https://ssl.pstatic.net/melona/libs/1514/1514754/36399b9f9d82c9074b80_20241016163454777.png" width="160" height="100" alt="광고 이미지">
+        <div class="kanu">
+          <strong>KANU</strong>
+          <p>[NEW]카누 싱글오리진 출시</p>
+          <p>카누 네스프레소 호환캡슐</p>
+          <p>신상캡슐 3종 최대 44% 할인</p>
+        </div>        
+      </div>
+      <div class="cmp-3">
+        <img class="thumb_img" src="https://ssl.pstatic.net/melona/libs/1479/1479913/c86f17b9daaa42e1512e_20241016101437140.png" width="160" height="100" alt="광고 이미지">
+        <div class="kanu">
+          <strong>KANU</strong>
+          <p>[NEW]카누 싱글오리진 출시</p>
+          <p>카누 네스프레소 호환캡슐</p>
+          <p>신상캡슐 3종 최대 44% 할인</p>
+        </div>
+      </div>
+    </div>
+    <div id="notif">
+      <span>공지사항</span><span>서비스 전체보기 ></span>
+    </div>
+    <div id="address">
+      <div class="adr">
+        <div class="partners">
+          <span>Partners</span>
+          <span>프로젝트 꽃</span>
+          <span>네이버 비지니스 스쿨</span>
+          <span>네이버 광고</span>
+          <span>스토어 개설</span>
+          <span>지역업체 등록</span>
+          <span>엑스퍼트 등록</span>
+        </div>
+        <div class="partners">
+          <span>Developers</span>
+          <span>네이버 개발자 센터</span>
+          <span>오픈 API</span>
+          <span>오픈소스</span>
+          <span>네이버 D2</span>
+          <span>네이버 D2SF</span>
+          <span>네이버 랩스</span>
+        </div>
+      </div>
+    </div>
+    <div id="end">
+      <div class="partners">
+        <span>회사소개</span>
+        <span>인재채용</span>
+        <span>제휴제안</span>
+        <span>이용약관</span>
+        <span>개인정보처리방침</span>
+        <span>청소년보호정책</span>
+        <span>네이버 정책</span>
+        <span>고객센터</span>
+        <span>ⓒ NAVER Corp.</span>
+    </div>
+  </footer>
+</body>
+</html>
